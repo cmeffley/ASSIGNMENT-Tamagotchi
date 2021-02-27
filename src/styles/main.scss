@@ -5,21 +5,35 @@ body {
   background-color: antiquewhite;
   color: brown;
   text-align: center;
-  margin-top: 100px;
+}
+
+#app {
+  height: 100vh;
+  border: black solid 5px;
+  display: grid;
+}
+
+#progress {
+  border: chartreuse solid 10px;
+  
 }
 
 #eat {
   border: red solid 2px;
+  margin: 5px;
 }
 
 #play {
   border: green solid 2px;
+  margin: 5px;
 }
 
 #fight {
   border: blue solid 2px;
+  margin: 5px;
 }
 
 #sleep {
   border: indigo solid 2px;
+  margin: 5px;
 }
