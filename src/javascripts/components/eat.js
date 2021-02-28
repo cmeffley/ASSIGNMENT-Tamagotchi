@@ -24,8 +24,8 @@ const eatPoints = () => {
   let eatCard = '';
   eatCard += `<h1>EAT</h1>
   <div id="eat-points" class="text-center">${full}</div>
-  <br/><button type="button" id="add1" class="btn btn-danger">Add</button><br/>
-  <button type="button" id="sub1" class="btn btn-warning">Subtract</button>
+  <br/><button type="button" id="add1" class="btn btn-danger">Healthy Food</button>
+  <button type="button" id="sub1" class="btn btn-warning">Junk Food</button>
   `;
   printToDom('#eat', eatCard);
 
