@@ -1,17 +1,36 @@
-// const button = () => {
-//   let full = 100;
-//   const addToDom = '<button type="button" id="add1" class="btn btn-danger">Add</button><button type="button" id="sub1" class="btn btn-warning">Subtract</button>';
-//   document.querySelector('#eat').innerHTML = full;
-//   document.querySelector('#eat').innerHTML = addToDom;
-// };
-// const eatPoints = (e) => {
-//   let full = 100;
-//   if (e.target.id === '#add1') {
-//     full = full += 10;
-//   // } else (e.target.id === '#sub1') {
-//   //   full - 3;
-//   // };
-//   }
-// };
+import printToDom from '../helpers/printToDom';
 
-// export { button, eatPoints };
+let full = 100;
+
+const changePoints = () => {
+  document.querySelector('#eat-points').innerHTML = full;
+};
+
+const goodFood = () => {
+  full += 10;
+  if (full > 100) {
+    full = 100;
+  }
+  changePoints();
+};
+
+const badFood = () => {
+  full -= 3;
+
+  changePoints();
+};
+
+const eatPoints = () => {
+  let eatCard = '';
+  eatCard += `<h1>EAT</h1>
+  <div id="eat-points" class="text-center">${full}</div>
+  <br/><button type="button" id="add1" class="btn btn-danger">Add</button><br/>
+  <button type="button" id="sub1" class="btn btn-warning">Subtract</button>
+  `;
+  printToDom('#eat', eatCard);
+
+  document.querySelector('#add1').addEventListener('click', goodFood);
+  document.querySelector('#sub1').addEventListener('click', badFood);
+};
+
+export default eatPoints;
