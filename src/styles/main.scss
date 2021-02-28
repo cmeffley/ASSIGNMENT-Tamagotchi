@@ -11,11 +11,12 @@ body {
   height: 100vh;
   border: black solid 5px;
   display: grid;
+  grid-template: repeat(1, 25px) repeat(2, 1fr) / repeat(2, 1fr);
 }
 
 #progress {
   border: chartreuse solid 10px;
-  
+  grid-column: 1 / -1;
 }
 
 #eat {
