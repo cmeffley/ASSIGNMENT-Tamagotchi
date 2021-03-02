@@ -26,8 +26,8 @@ const sleepPoints = () => {
   let sleepCard = '';
   sleepCard += `<h1>SLEEP</h1>
   <div id="energy-points" class="text-center">${energy}</div>
-  <br/><button type="button" id="nap-time" class="btn btn-danger">Nap Time!</button>
-  <button type="button" id="deep-sleep" class="btn btn-warning">Sleepzzzz</button>
+  <br/><button type="button" id="nap-time" class="btn btn-light">Nap Time!</button>
+  <button type="button" id="deep-sleep" class="btn btn-dark">Sleepzzzz</button>
   `;
   printToDom('#sleep', sleepCard);
 

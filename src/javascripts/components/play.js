@@ -26,8 +26,8 @@ const funPoints = () => {
   let playCard = '';
   playCard += `<h1>PLAY</h1>
   <div id="play-points" class="text-center">${fun}</div>
-  <br/><button type="button" id="super-fun1" class="btn btn-danger">Super Fun</button>
-  <button type="button" id="slight-fun1" class="btn btn-warning">Slight Fun</button>
+  <br/><button type="button" id="super-fun1" class="btn btn-primary">Super Fun</button>
+  <button type="button" id="slight-fun1" class="btn btn-info">Slight Fun</button>
   `;
   printToDom('#play', playCard);
 
