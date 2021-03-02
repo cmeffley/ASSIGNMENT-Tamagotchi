@@ -16,6 +16,9 @@ const runAway = () => {
 
 const violence = () => {
   strength -= 10;
+  if (strength <= 0) {
+    strength = 0;
+  }
 
   fightPoints();
 };
@@ -24,8 +27,8 @@ const strengthPoints = () => {
   let fightCard = '';
   fightCard += `<h1>FIGHT</h1>
   <div id="fight-points" class="text-center">${strength}</div>
-  <br/><button type="button" id="brave" class="btn btn-danger">Bravely Run Away!</button>
-  <button type="button" id="anger" class="btn btn-warning">Violence</button>
+  <br/><button type="button" id="brave" class="btn btn-warning">Bravely Run Away!</button>
+  <button type="button" id="anger" class="btn btn-danger">Violence</button>
   `;
   printToDom('#fight', fightCard);
 
