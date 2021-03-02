@@ -16,6 +16,9 @@ const goodFood = () => {
 
 const badFood = () => {
   full -= 3;
+  if (full <= 0) {
+    // full = '<img src="../components/javascripts/img/iconfinder_Skull_3733549.png"/>';
+  }
 
   changePoints();
 };
