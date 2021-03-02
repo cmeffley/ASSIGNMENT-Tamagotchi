@@ -3,7 +3,8 @@
 
 body {
   background-color: antiquewhite;
-  color: brown;
+  color: ivory;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -21,20 +22,28 @@ body {
 
 #eat {
   border: red solid 2px;
-  margin: 5px;
+  margin: 2px;
+  background: url("https://image.shutterstock.com/image-vector/food-seamless-pixel-art-pattern-260nw-1688269606.jpg");
+  background-size: cover;
 }
 
 #play {
   border: green solid 2px;
-  margin: 5px;
+  margin: 2px;
+  background: url("https://i1.wp.com/www.jenx67.com/wp-content/uploads/2010/05/2789444826_630b991227.jpg?resize=640%2C480");
+  background-size: cover;
 }
 
 #fight {
   border: blue solid 2px;
-  margin: 5px;
+  margin: 2px;
+  background: url("https://t4.ftcdn.net/jpg/03/15/24/97/360_F_315249718_sbLENcbYkKPsuLu6WYODeUeZyQzjVYvD.jpg");
+  background-size: cover;
 }
 
 #sleep {
   border: indigo solid 2px;
-  margin: 5px;
+  margin: 2px;
+  background: url("https://assets.blog.hgtv.ca/wp-content/uploads/2019/08/15111313/GettyImages-overall-bedroom1.jpg");
+  background-size: cover;
 }
